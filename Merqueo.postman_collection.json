@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "91233c8e-a2f5-44b6-97a1-2d2efbf94cf3",
+		"name": "Merqueo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://{{PROD}}/albums",
+					"protocol": "https",
+					"host": [
+						"{{PROD}}"
+					],
+					"path": [
+						"albums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://{{PROD}}",
+					"protocol": "https",
+					"host": [
+						"{{PROD}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"userId\": 1,\n        \"id\": 1,\n        \"title\": \"Esto es una prueba para merqueo qa\",\n        \"body\": \"{{testqa}}\"\n}"
+				},
+				"url": {
+					"raw": "https://{{PROD}}/posts",
+					"protocol": "https",
+					"host": [
+						"{{PROD}}"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"postId\": 1,\n        \"id\": 1,\n        \"name\": \"id labore ex et quam laborum\",\n        \"email\": \"Eliseo@gardner.biz\",\n        \"body\": \"prueba put\"\n    }"
+				},
+				"url": {
+					"raw": "https://{{PROD}}/posts-1",
+					"protocol": "https",
+					"host": [
+						"{{PROD}}"
+					],
+					"path": [
+						"posts-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://{{PROD}}/albums/1",
+					"protocol": "https",
+					"host": [
+						"{{PROD}}"
+					],
+					"path": [
+						"albums",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2b56a2b5-f783-4fee-aa25-b92600bbe09c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b80ec9ff-9898-437d-b412-012e866471bb",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "ed520b35-402c-4383-bac7-1c45ef9ff31e",
+			"key": "testqa",
+			"value": "Esto es una prueba de merqueo",
+			"type": "string"
+		}
+	]
+}
